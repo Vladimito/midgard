@@ -1,5 +1,5 @@
 ---
-
+layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Finally got myself to work on my digital garden'
 pubDate: 2023-01-17
 description: "This is the first seed I've sow in my garden"
@@ -13,7 +13,6 @@ tags: ["astro", "website", "learning in public"]
 
 # Finally got myself to work on my digital garden
 
-posted on: 2023-01-17
 
 Welcome to new and _improved_ V's Domain. Now it's a garden where I can finally contain everything I want to talk about without annoying every last person on the planet about my interests. Now people can just subject themselves to it of their own **choice!**
 
