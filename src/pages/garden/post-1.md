@@ -1,4 +1,5 @@
 ---
+
 title: 'Finally got myself to work on my digital garden'
 pubDate: 2023-01-17
 description: "This is the first seed I've sow in my garden"
@@ -7,6 +8,7 @@ image:
     url: 'https://astro.build/assets/blog/astro-1-release-update/cover.jpeg' 
     alt: 'The Astro logo with the word One.'
 tags: ["astro", "website", "learning in public"]
+
 ---
 
 # Finally got myself to work on my digital garden

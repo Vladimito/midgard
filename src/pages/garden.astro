@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
 const pageTitle = "V's Garden - Garden"
 ---
 <html lang="en">
@@ -10,10 +12,7 @@ const pageTitle = "V's Garden - Garden"
 		<title>{pageTitle}</title>
     </head>
     <body class="md:text-center md:text-2xl">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/garden/">My Garden</a>
-      
+        <Header />
         <h1>Just like the great tree Yggdrasil this garden starts off with roots</h1>
         <p>This is where you'll find a collection of posts I make about my development of this site, my drinking and many other hobbies/projects.</p>
         

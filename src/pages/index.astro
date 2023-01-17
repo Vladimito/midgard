@@ -1,4 +1,6 @@
 ---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
 const pageTitle = "V's Garden - Heartwood"
 ---
 
@@ -11,9 +13,7 @@ const pageTitle = "V's Garden - Heartwood"
 		<title>{pageTitle}</title>
 	</head>
 	<body class="md:text-center md:text-2xl">
-		<a href="/">Home</a>
-        <a href="/about/">About</a>
-		<a href="/garden">My Garden</a>
+		<Header />
 		<h1>その目、だれの目？</h1>
 	</body>
 </html>
