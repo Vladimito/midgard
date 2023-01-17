@@ -1,4 +1,13 @@
 ---
+const pageTitle = "V's Garden - About Me"
+
+const identity = 
+{
+    firstName: "Vladimir",
+    country: "Canada",
+    occupation: "Programming Hobbyist/Tea Enjoyer",
+    hobbies: ["tea", "tabletop RPGs", "Horror Movies", "Video Games", "Music"]
+}
 ---
 
 <html lang="en">
@@ -7,7 +16,7 @@
 		<link rel="icon" href="https://thumbs.gfycat.com/CircularEllipticalAffenpinscher-size_restricted.gif" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>V's Garden - About</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body class="md:text-center md:text-2xl">
         <a href="/">Home</a>
@@ -19,5 +28,15 @@
         <p>This is going to be where I'll be sowing seeds about things in my life I find interesting and the various projects I'm working on.</p>
 
         <p>This site also is built using the Astro tutorial so it'll change and grow as I go along the guide. So do check back to see progress on its development.</p>
+
+        <p>While I have you here, here's some info about me:
+            <ul>
+                <li>My full name is {identity.firstName}.</li>
+                <li>I'm a {identity.occupation} from {identity.country}. I finished my degree recently and I'm waiting on my paper in the mail!</li>
+                {identity.hobbies.length >= 2 &&
+                    <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+                }
+            </ul>
+        </p>
 	</body>
 </html>
