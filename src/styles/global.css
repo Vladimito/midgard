@@ -7,3 +7,12 @@ body
     background-color: #783b63;
     color: #9cc0d5;
 }
+
+a {
+    color: #5a92b3;
+}
+
+a:hover {
+    color: #9a4da3;
+    text-decoration: underline;
+}

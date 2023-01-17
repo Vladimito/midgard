@@ -1,27 +1,16 @@
 ---
 import '../styles/global.css';
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "V's Garden - Garden"
 ---
-<html lang="en">
-    <head>		
-        <meta charset="utf-8" />
-		<link rel="icon" href="https://thumbs.gfycat.com/CircularEllipticalAffenpinscher-size_restricted.gif" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-    </head>
-    <body class="md:text-center md:text-2xl">
-        <Header />
-        <h1>Just like the great tree Yggdrasil this garden starts off with roots</h1>
-        <p>This is where you'll find a collection of posts I make about my development of this site, my drinking and many other hobbies/projects.</p>
-        
-        <main>
-            <ul>
-                <li><a href="/garden/post-1/">Finally started my digital garden</a></li>
-                <li><a href="/garden/post-2/">Pathfinder Session #1</a></li>
-              </ul>
-        </main>
-
-    </body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+    <h1>Just like the great tree Yggdrasil this garden starts off with roots</h1>
+    <p>This is where you'll find a collection of posts I make about my development of this site, my drinking and many other hobbies/projects.</p>
+    
+    <main>
+        <ul>
+            <li><a href="/garden/post-1/">Finally started my digital garden</a></li>
+            <li><a href="/garden/post-2/">Pathfinder Session #1</a></li>
+          </ul>
+    </main>
+</BaseLayout>

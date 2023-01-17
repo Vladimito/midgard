@@ -12,33 +12,23 @@ const identity =
 }
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" href="https://thumbs.gfycat.com/CircularEllipticalAffenpinscher-size_restricted.gif" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-        <BaseLayout pageTile={pageTitle}>
-            <main>
-		    <h1>Welcome to My Domain!</h1>
-            <h2>I'm Vlad and this is my digital garden</h2>
 
-            <p>This is going to be where I'll be sowing seeds about things in my life I find interesting and the various projects I'm working on.</p>
+<BaseLayout pageTile={pageTitle}>
+    <main>
+        <h1>Welcome to My Domain!</h1>
+        <h2>I'm Vlad and this is my digital garden</h2>
 
-            <p>This site also is built using the Astro tutorial so it'll change and grow as I go along the guide. So do check back to see progress on its development.</p>
+        <p>This is going to be where I'll be sowing seeds about things in my life I find interesting and the various projects I'm working on.</p>
 
-            <p>While I have you here, here's some info about me:
-                <ul>
-                    <li>I'm a {identity.occupation} from {identity.country}. I finished my degree recently and I'm waiting on my paper in the mail!</li>
-                    {identity.hobbies.length >= 2 &&
-                        <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
-                    }
-                </ul>
-            </p>
-            </main>
-        </BaseLayout>
-	</body>
-</html>
+        <p>This site also is built using the Astro tutorial so it'll change and grow as I go along the guide. So do check back to see progress on its development.</p>
+
+        <p>While I have you here, here's some info about me:
+            <ul>
+                <li>I'm a {identity.occupation} from {identity.country}. I finished my degree recently and I'm waiting on my paper in the mail!</li>
+                {identity.hobbies.length >= 2 &&
+                <li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}</li>
+                }
+            </ul>
+        </p>
+    </main>
+</BaseLayout>
